@@ -62,5 +62,20 @@ console.log(emptyArray);
 
 // 6
 
+const randomArray = [10, 9, 9, 8, 8, 11, 8, 0, 9, 1]
+let highest = 0;
+let secondHighest = 0;
+
+for (let i = 0; i < randomArray[i]; i++){
+    if(randomArray[i] > highest){
+        secondHighest = highest;
+        highest = randomArray [i];
+    }
+    if(randomArray[i] > secondHighest && randomArray[i] < highest) {
+        secondHighest = randomArray[i]
+    }
+}
+console.log (highest)
+console.log (secondHighest)
 
 
